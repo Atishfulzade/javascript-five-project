@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease-in-out all;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section h1 {
+  font-size: 30px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container_one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 400px;
+  padding: 20px;
+  margin: 30px 30px;
+  box-shadow: 0px -2px 20px 0px gray;
+  height: 500px;
+  background-color: rgb(243, 246, 246);
+}
+.container_one img {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+.name {
+  color: rgb(110, 107, 107);
+}
+.status {
+  color: rgb(113, 48, 48);
+  margin: 5px;
+}
+.container_one button {
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 2px;
+  font-size: 20px;
+  background-color: #7c096d;
+  border: none;
+  color: white;
+}
+.container_one button:hover {
+  opacity: 90%;
+}
+/* second section */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.2s;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 400px;
+  padding: 30px 20px;
+  margin: 30px 30px;
+  box-shadow: 0px -2px 20px 0px gray;
+  height: 500px;
+  background-color: rgb(243, 246, 246);
+  position: relative;
+}
+.box img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+.like {
+  position: absolute;
+
+  font-size: 70px;
+  color: rgba(221, 212, 212, 0.856);
+  top: 35%;
+  left: 40%;
+  opacity: 0;
+  transform: translate(-50%) (-50%) scale(0);
+  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+.box span {
+  margin: 10px 0;
+}
+.below .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+/* third section */
+.heading {
+  font-size: 10vw;
+  color: white;
+}
+.cursor {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transform: translate(-50%) (-50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: all ease 0.1s;
+}
+.moviename {
+  border-bottom: 5px solid white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  transition: all linear 0.2s;
+}
+.moviename h1 {
+  font-size: 6vw;
+}
+.moviename img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  /* transform: translate(50%) (50%); */
+  opacity: 0;
+
+  /* transform: translate(-50)px (-50)px; */
+}
+
+/* last section */
+
+.instaframe {
+  height: 700px;
+  width: 30%;
+  box-shadow: 1px 0px 19px 0px gray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.storysection {
+  width: 100%;
+  height: 120px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 10px;
+  display: flex;
+  border-bottom: 1px solid rgb(221, 220, 220);
+  white-space: nowrap;
+}
+.storysection::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  flex-direction: column;
+  align-items: center;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.storyicon {
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.storyicon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.story p {
+  font-size: 10px;
+  text-align: center;
+}
+.fullscreen {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(4, 121, 4);
+  position: absolute;
+  display: none;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
